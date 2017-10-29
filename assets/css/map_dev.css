@@ -1,0 +1,128 @@
+#map{
+    min-height: 400px;
+}
+#contentinmap{
+    background-image: url('/assets/css/Dubai.png');
+    background-size: cover; /* Масштабируем фон */
+}
+.inmap_block{
+    position: relative;
+    position: relative;
+    width: 25%;
+    float: right;
+    height: 100%;
+    /*для перекрития инфо про гуглу*/
+    z-index: 10000000;
+}
+.panel-footer-map{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.inmapmaintext{
+
+    background-color: whitesmoke;
+}
+
+
+#elements_in_map_table td.infocategory {
+    cursor: default;
+    font-size: 15px;
+
+}
+
+.inmapmaintext p{
+    text-indent: 1em;
+    font-size: 12px;
+
+}
+
+.panel-footer-map.clickedobj{
+    cursor: pointer;
+    padding: 17px 15px;
+    background-color: #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: gray;
+
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 1px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 0px 0px rgba(0,0,0,.2), 0 1px 0px rgba(0,0,0,.25), 0 0px 2px rgba(0,0,0,.2), 0 -1px 0px rgba(0,0,0,.15);
+}
+
+
+
+.panel-footer-map.clickedobj::after{
+    content: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIGlkPSJsb2NhdGlvbiI+PHBhdGggY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTYuMDAyLDE3Ljc0NmMzLjMwOSwwLDYtMi42OTIsNi02cy0yLjY5MS02LTYtNiAgIGMtMy4zMDksMC02LDIuNjkxLTYsNlMxMi42OTMsMTcuNzQ2LDE2LjAwMiwxNy43NDZ6IE0xNi4wMDIsNi43NDZjMi43NTgsMCw1LDIuMjQyLDUsNXMtMi4yNDIsNS01LDVjLTIuNzU4LDAtNS0yLjI0Mi01LTUgICBTMTMuMjQ0LDYuNzQ2LDE2LjAwMiw2Ljc0NnoiIGZpbGw9IiMzMzMzMzMiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE2LDBDOS4zODIsMCw0LDUuMzE2LDQsMTIuMDAxYzAsNyw2LjAwMSwxNC4xNjEsMTAuMzc2LDE5LjE5NCAgIEMxNC4zOTIsMzEuMjE1LDE1LjA5NCwzMiwxNS45NjIsMzJjMC4wMDIsMCwwLjA3MywwLDAuMDc3LDBjMC44NjcsMCwxLjU3LTAuNzg1LDEuNTg2LTAuODA1ICAgYzQuMzc3LTUuMDMzLDEwLjM3Ny0xMi4xOTMsMTAuMzc3LTE5LjE5NEMyOC4wMDIsNS4zMTYsMjIuNjE5LDAsMTYsMHogTTE2LjExNywyOS44ODNjLTAuMDIxLDAuMDItMC4wODIsMC4wNjQtMC4xMzUsMC4wOTggICBjLTAuMDEtMC4wMjctMC4wODQtMC4wODYtMC4xMjktMC4xMzNDMTIuMTg4LDI1LjYzMSw2LDE4LjUxNCw2LDEyLjAwMUM2LDYuNDg3LDEwLjQ4NywyLDE2LDJjNS41MTYsMCwxMC4wMDIsNC40ODcsMTAuMDAyLDEwLjAwMiAgIEMyNi4wMDIsMTguNTE0LDE5LjgxNCwyNS42MzEsMTYuMTE3LDI5Ljg4M3oiIGZpbGw9IiMzMzMzMzMiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvZz48L3N2Zz4=');
+    position: absolute;
+    right: 21px;
+    bottom: 11px;
+}
+h4.clickedobj::after{
+
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA2klEQVQ4T6VTSQoCMRB0/IILCIonvbi9QS/qh8WDyyd0vKt40EdolXSg03RymAkUTDqphe5M0ai5igp8cr6BpwWOKI6BNVAmhBeo74EbsOIdLfDAvg+85fBqREimSQu4A0MrMEHhBHQdkbmckUyDZUhpe0CRM9ABPpKkKc5tS7YJQuKpuAURmrjklADrM3GlCFcUW/cmNcZaAppMZy6vsf8Dm8CS2W3eSU0nEvDI4UF507nYBC8UepmG6ek8cW9gBQ4ojIAtkHrKTLkD+Eo3uTHqSWW/q/yNkeAPiaw3EbaNhwgAAAAASUVORK5CYII=');
+    position: relative;
+    cursor: pointer;
+    right: -63px;
+    opacity: 0.5;
+}
+
+
+#right{
+    overflow-y: scroll;
+    background-color: whitesmoke;
+}
+.numberCircle {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+    font: 15px Arial, sans-serif;
+    float: left;
+}
+.element_in_map{
+    padding: 8px;
+    top: 3px;
+    position: relative;
+}
+#elements_in_map_table td{
+    cursor: pointer;
+}
+
+.numberCircle.active{
+    background-color: #5A8888;
+    color: white;
+}
+
+
+
+#contentinmap .panel.panel-default {
+    border-radius: 0;
+}
+
+
+/*             develop          */
+.red{
+    /*background-color: red;*/
+}
+.cyan{
+    background-color: cyan;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+.max{
+height: 100%;
+    width: 100%;
+}
