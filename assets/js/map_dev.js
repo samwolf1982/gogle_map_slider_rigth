@@ -7,6 +7,15 @@ function goleft() {
     $('#left').hide("slide", { direction: "left" }, 500, function () {
         $('#right').show("slide", { direction: "right" }, 500);
     });
+
+
+}
+
+function goleftinmap(callback) {
+    $('#left').hide("slide", { direction: "left" }, 500, function () {
+        $('#right').show("slide", { direction: "right" }, 500);
+    });
+    callback();
 }
 function goright() {
     $('#right').hide("slide", { direction: "right" }, 500, function () {
@@ -24,6 +33,8 @@ function goright() {
 var map;
 var markers;
 var  index_centr_pos_onclick=null; // индекс остенего маркера для смены на старый.
+
+var curent_el;  // для калбека.
 
 function initMap() {
 
@@ -67,37 +78,39 @@ function initMap() {
             //центрирование
             map.setCenter(marker.position);
 
-             // goleft();
+
+
             // в правой части добавление актива
             $('.td_in_elements_map .numberCircle').removeClass('active');
 
               $('.numberCircle').each(function (i,el) {
                   if(i==number){ $(el).addClass('active');
 
+                      curent_el=el;
+
+
                       // $(el).scrollTo('tr[data-uid="' + basketID + '"]');
                       // $('#right').scrollTop($(el));
+
+                      //goleftinmap(clikonpointer)
+
                       var contactTopPosition = $(el).position().top;
-
-
-                      var container = $("#right"),
-                          scrollTo = $(el);
+                      var container = $("#right");
+                        var  scrollTo = $(el);
 
                       container.animate({
                           scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
-                      },1300);
+                      },800,function () {
 
-                      // $("#right").animate({
-                      //     scrollTop: contactTopPosition - $("#right").offset().top + $("#right").scrollTop()
-                      // });​
+                          console.log('ssssssssss');
+                          // goleft();
+                      });
 
-                      // $('#right').scroll();
-                     // $("#right").animate({scrollTop: contactTopPosition});
-                      // $('#right').animate({
-                      //     scrollTop: 1000
-                      // }, 2000);
                   }
 
               });
+
+            // goleftinmap(clikonpointer)
         })
     });
 
@@ -108,6 +121,12 @@ function initMap() {
         {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 }
 
+
+
+function clikonpointer(el,) {
+
+    console.log('clikonpointer');
+}
 
 function loadmap(e) {
     console.log('Map loaded!');
