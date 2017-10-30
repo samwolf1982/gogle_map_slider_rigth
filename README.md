@@ -1,0 +1,1 @@
+Alklaku sur la mapo kaj reagu en alia fenestro
