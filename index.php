@@ -28,11 +28,6 @@
 
   <div class="starter-template">
     <h1 class="text-center">Map</h1>
- <?php
-// в js загружаем
- //                    var center_point=.., var locations = [center_point,,,,,,,,     // координаты и к точкам
- //                   var  locations_atachment инфа к координатам  ['img,'img_active','title'
- include_once 'assets/files/map_coordinate.php'; ?>
     <div id="map"></div>
   </div>
 </div>
@@ -41,13 +36,15 @@
 
 
 
-<script>
 
 
+
+
+
+<script src="/assets/js/markerclusterer.js">
 </script>
-<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-</script>
-<script async defer
+<script src="assets/js/map_dev.js"></script>
+<script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT0vZuLVJWrcSUdY0j-iga0aB85wmNWgM&callback=initMap">
 </script>
 <script src="/vendor/components/jquery/jquery.js"></script>
@@ -55,6 +52,6 @@
 <script src="/vendor/components/jqueryui/jquery-ui.js"></script>
 
 
-<script src="assets/js/map_dev.js"></script>
+
 </body>
 </html>

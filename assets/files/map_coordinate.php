@@ -1,5 +1,4 @@
 <?php
-
 // координаты описание к ним и начальная точка
 include_once 'map_coordinate_js.php';
 
@@ -33,8 +32,10 @@ $resp.= <<<EOT
 ];
 </script>
 EOT;
-echo $resp;
-?>
+
+ echo $resp;
+
+
 
 
 

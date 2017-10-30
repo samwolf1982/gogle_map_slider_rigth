@@ -1,3 +1,23 @@
+
+
+
+
+var center_point={lat: 50.400769, lng: 30.53162};
+var locations = [    {lat: 50.400769, lng: 30.53162},    {lat: 50.4051102, lng: 30.517419},    {lat: 50.4133524, lng: 30.5242655},    {lat: 50.3976431, lng: 30.50967},    {lat: 50.400737, lng: 30.529211},    {lat: 50.401457, lng: 30.528621},    {lat: 50.411503, lng: 30.522605},    {lat: 50.397216, lng: 30.530641},    {lat: 50.397163, lng: 30.530652},    {lat: 50.39621, lng: 30.533303},    {lat: 50.401573, lng: 30.530595},    {lat: 50.401572, lng: 30.539938},    {lat: 50.401724, lng: 30.51386},    {lat: 50.392752, lng: 30.509188},    {lat: 50.392246, lng: 30.546889},    {lat: 50.400363, lng: 30.528003},    {lat: 50.401609, lng: 30.528689},    {lat: 50.403683, lng: 30.532598},    {lat: 50.401642, lng: 30.544288},]
+var locations_atachment = [    {img: '/assets/css/caskade_min.png', img_active: '/assets/css/caskade_simple.png'},    {img: '/assets/css/metro.png', img_active: '/assets/css/metroactive.png'},    {img: '/assets/css/metro.png', img_active: '/assets/css/metroactive.png'},    {img: '/assets/css/metro.png', img_active: '/assets/css/metroactive.png'},    {img: '/assets/css/dozvilla.png', img_active: '/assets/css/dozvillayactive.png'},    {img: '/assets/css/dozvilla.png', img_active: '/assets/css/dozvillayactive.png'},    {img: '/assets/css/dozvilla.png', img_active: '/assets/css/dozvillayactive.png'},    {img: '/assets/css/dozvilla.png', img_active: '/assets/css/dozvillayactive.png'},    {img: '/assets/css/dozvilla.png', img_active: '/assets/css/dozvillayactive.png'},    {img: '/assets/css/dozvilla.png', img_active: '/assets/css/dozvillayactive.png'},    {img: '/assets/css/dozvilla.png', img_active: '/assets/css/dozvillayactive.png'},    {img: '/assets/css/dozvilla.png', img_active: '/assets/css/dozvillayactive.png'},    {img: '/assets/css/dozvilla.png', img_active: '/assets/css/dozvillayactive.png'},    {img: '/assets/css/dozvilla.png', img_active: '/assets/css/dozvillayactive.png'},    {img: '/assets/css/dozvilla.png', img_active: '/assets/css/dozvillayactive.png'},    {img: '/assets/css/bank.png', img_active: '/assets/css/bankactive.png'},    {img: '/assets/css/bank.png', img_active: '/assets/css/bankactive.png'},    {img: '/assets/css/azs.png', img_active: '/assets/css/azsactive.png'},    {img: '/assets/css/azs.png', img_active: '/assets/css/azsactive.png'},];
+
+
+
+
+
+
+
+
+
+
+
+
+
 $(function() {
     // Handler for .ready() called.
     console.log('ok');
