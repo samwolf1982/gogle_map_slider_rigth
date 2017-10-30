@@ -53,11 +53,17 @@ foreach ($point_coords as $point_coord) {
             <?php
 $index=0;
 foreach ($category_map as $k=> $categories) {
+    if ($index==0){
+        $index++;
+        continue;
+    }
     echo  "<tr><td class='infocategory' > <div ><span>{$k} </span></div></td></tr>";
+
+
 
                 foreach ($categories as $i=> $item) {
                     $dist=sprintf('%.2F КМ', random_float(1,25));
-                    $visual_nubet_info=$index+1;
+                    $visual_nubet_info=$index;
                     echo  "<tr><td data-target='{$index}' class='td_in_elements_map' > <div class='numberCircle text-center'>{$visual_nubet_info}</div>
                <span class='element_in_map'>{$item['title']}</span><br/>
                <span class='element_in_map in_map distance'>{$item['info']['length']} </span></td></tr>";

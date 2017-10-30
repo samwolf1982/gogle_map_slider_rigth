@@ -17,8 +17,18 @@
  * info - масив абс...      доп даные для информации в модельном окне при клике
  *
  */
-$center_point=[50.4005585,30.5315719];
+$center_point=[50.400769, 30.531620];
+//lng+ 0.0012
+//$center_point=[50.400769, 30.532820];
 $point_coords=[
+    [
+        50.400769, 30.531620,'img'=>'/assets/css/caskade_min.png',
+        'img_active'=>'/assets/css/caskade_simple.png',
+        'title'=>'велика китаївська 71 ',
+        'category'=>'Cascade House',
+        'info'=>['length'=>'основной адрес, наш объект','a'=>'','b'=>'','c'=>'']
+    ],
+
     [
         50.4051102,  30.517419,'img'=>'/assets/css/metro.png',
                                   'img_active'=>'/assets/css/metroactive.png',

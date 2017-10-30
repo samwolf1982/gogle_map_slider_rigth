@@ -99,7 +99,9 @@ h4.clickedobj::after{
     color: white;
 }
 
-
+.gmnoprint{
+    left: 0px!important;
+}
 
 #contentinmap .panel.panel-default {
     border-radius: 0;
